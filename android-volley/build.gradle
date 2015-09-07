@@ -1,0 +1,50 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:1.0.0'
+    }
+}
+apply plugin: 'com.android.library'
+android {
+    compileSdkVersion 21
+    buildToolsVersion "21.1.1"
+
+    group = 'com.android.volley'
+    version = "0.9.0"
+
+    sourceSets {
+        defaultConfig {
+
+        }
+
+        main {
+            assets.srcDirs = ['assets']
+            res.srcDirs = ['res']
+            aidl.srcDirs = ['src']
+            resources.srcDirs = ['src']
+            renderscript.srcDirs = ['src']
+            java.srcDirs = ['src']
+            manifest.srcFile 'AndroidManifest.xml'
+
+        }
+
+        instrumentTest {
+            assets.srcDirs = ["tests/assets"]
+            res.srcDirs = ["tests/res"]
+            resources.srcDirs = ["tests/src"]
+            java.srcDirs = ["tests/src"]
+        }
+    }
+}
+task jar(type: Jar) {
+    from android.sourceSets.main.java
+}
+
+dependencies {
+    compile files('libs/gson-2.2.4.jar')
+    compile 'com.squareup.okhttp:okhttp:2.2.0'
+    compile 'com.squareup.okhttp:okhttp-urlconnection:2.2.0'
+}

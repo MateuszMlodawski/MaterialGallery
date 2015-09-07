@@ -1,0 +1,42 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="AppTheme.Base">
+    </style>
+
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorControlActivated">@color/primary_dark</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+
+
+
+    <style name="TextAppearance.AppCompat.Base.CompactMenu.Dialog" parent="android:TextAppearance.Medium">
+        <item name="android:textColor">@android:color/primary_text_light</item>
+    </style>
+
+    <style name="Theme.AppCompat.Base.CompactMenu.Dialog" parent="">
+        <item name="android:itemTextAppearance">
+            @style/TextAppearance.AppCompat.Base.CompactMenu.Dialog
+        </item>
+        <item name="android:listViewStyle">@android:style/Widget.ListView.Menu</item>
+    </style>
+
+    <style name="CustomDialogTheme" parent="@style/Theme.AppCompat.Base.CompactMenu.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowBackground">@drawable/solid_trans</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@style/PopupAnimation</item>
+    </style>
+
+    <style name="PopupAnimation" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+    </style>
+</resources>

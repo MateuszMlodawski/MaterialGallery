@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Author Mateusz Mlodawski mmlodawski@gmail.com
+  ~ 9/2/15 2:42 PM
+  -->
+
+<com.mmlodawski.materialgallery.view.PhotoDetailViewLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container_picture"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+</com.mmlodawski.materialgallery.view.PhotoDetailViewLayout>

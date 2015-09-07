@@ -1,0 +1,5 @@
+<resources>
+    <dimen name="empty_screen_text_size">24sp</dimen>
+    <dimen name="grid_cell_height">180dp</dimen>
+    <dimen name="grid_cell_offset">4dp</dimen>
+</resources>

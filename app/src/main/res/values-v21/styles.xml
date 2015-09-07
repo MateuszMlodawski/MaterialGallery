@@ -1,0 +1,15 @@
+<!--
+  ~ Author Mateusz Mlodawski mmlodawski@gmail.com
+  ~ 9/3/15 2:07 PM
+  -->
+
+<resources>
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorControlActivated">@color/primary_dark</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="android:windowActionBar">false</item>
+    </style>
+</resources>
