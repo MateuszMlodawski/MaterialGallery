@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <resources>
-
     <color name="red_50">#fde0dc</color>
     <color name="red_100">#f9bdbb</color>
     <color name="red_200">#f69988</color>
@@ -282,5 +281,4 @@
     <color name="primary">@color/teal_400</color>
     <color name="primary_dark">@color/teal_700</color>
     <color name="accent">@color/orange_A200</color>
-
 </resources>
