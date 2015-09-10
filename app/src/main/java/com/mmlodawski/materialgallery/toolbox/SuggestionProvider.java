@@ -6,7 +6,7 @@ package com.mmlodawski.materialgallery.toolbox;
 import android.content.SearchRecentSuggestionsProvider;
 
 public class SuggestionProvider extends SearchRecentSuggestionsProvider {
-    public final static String AUTHORITY = "com.mmlodawski.materialgallery.toolbox.SuggestionProvider";
+    public final static String AUTHORITY = SuggestionProvider.class.getCanonicalName();
     public final static int MODE = DATABASE_MODE_QUERIES;
 
     public SuggestionProvider() {
