@@ -7,7 +7,7 @@ import android.os.Bundle;
 
 import com.mmlodawski.materialgallery.view.FeedView;
 
-public interface Presenter {
+public interface FeedPresenterInterface {
     void setView(FeedView feedView);
 
     void onSaveInstanceState(Bundle outState);

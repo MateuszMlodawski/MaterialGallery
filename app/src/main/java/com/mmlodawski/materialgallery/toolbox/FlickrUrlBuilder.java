@@ -3,7 +3,6 @@
  */
 package com.mmlodawski.materialgallery.toolbox;
 
-import android.util.Log;
 import android.util.Pair;
 
 import com.mmlodawski.materialgallery.model.ParcelablePageModel;
@@ -94,7 +93,6 @@ public class FlickrUrlBuilder extends UrlBuilder {
         this.method = Method.SEARCH_PHOTOS;
         String params = "&" + searchParam + "=" + query;
 
-        Log.d("T", build() + params);
         return build() + params;
     }
 

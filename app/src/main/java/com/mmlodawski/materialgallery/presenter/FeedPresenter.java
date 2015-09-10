@@ -20,7 +20,7 @@ import com.mmlodawski.materialgallery.volley.requests.get.SearchForFlickrImagesR
 import java.util.ArrayList;
 import java.util.List;
 
-public class FeedPresenter implements Presenter {
+public class FeedPresenter implements FeedPresenterInterface {
 
     private static final String KEY_DISPLAYED_ITEMS = "displayed_items";
     private static final String KEY_NEXT_PAGE_MODEL = "next_page_model";
